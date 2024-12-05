@@ -1,4 +1,5 @@
 let addButton = document.querySelector('.addQuestion');
+let saveButton = document.querySelector('.saveQuestions');
 
 addButton.addEventListener('click', function(e) {
     e.preventDefault();
@@ -15,4 +16,22 @@ addButton.addEventListener('click', function(e) {
     document.querySelector('.questions').appendChild(newQuestion);
     document.querySelector('.question').value = '';
     document.querySelector('.answer').value = '';
+});
+
+saveButton.addEventListener('click', function() {
+    let questions = document.querySelectorAll('.questions > div');
+    if (questions.length === 0) {
+        alert('No questions to save.');
+        return;
+    }
+
+    let data = [];
+    questions.forEach(function(questionDiv) {
+        let question = questionDiv.querySelector('.question').innerText;
+        let answer = questionDiv.querySelector('.answer').innerText;
+        data.push({ question: question, answer: answer });
+    });
+
+    localStorage.setItem('questionsData', JSON.stringify(data));
+    console.log('Data saved to localStorage:', data);
 });
