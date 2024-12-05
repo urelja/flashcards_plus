@@ -219,7 +219,7 @@ my sets
     margin-bottom: 40px;
 }
 
-.question, .answer {
+.question, .answer, .setTitle {
     height: 2em;
 }
 
@@ -248,4 +248,35 @@ my sets
     border: 1px solid #e2e2e2;
     min-height: 30px;
     height: auto;
+}
+
+.new_set .questions-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.new_set .questions-input input[type="text"]:focus {
+    border-color: #4F76F5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 118, 245, 0.5);
+}
+.new_set .questions-input button.addQuestion {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #4F76F5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.new_set .questions-input button.addQuestion:hover {
+    background-color: #3F49B7;
 }

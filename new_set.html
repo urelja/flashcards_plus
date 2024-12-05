@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body class="new_set">
     <nav>
@@ -24,25 +24,20 @@
             </div>
         </div>
         <div class="options">
-            <h1>Enter questions and answers</h1>
+            <h1>Enter set title, questions, and answers</h1>
             <form action="" class="questions-input">
-                <input type="text" class="question">
-                <input type="text" class="answer">
+                <input type="text" class="setTitle" placeholder="Set Title">
+                <br>
+                <input type="text" class="question" placeholder="Question">
+                <input type="text" class="answer" placeholder="Answer">
                 <button class="addQuestion">Add</button>
             </form>
             <div class="questions">
-                <!-- <div>
-                <div class="set">
-                    <div class="question"></div>
-                    <div class="answer"></div>
-                </div>
-            </div> -->
+                <!-- Questions will be appended here -->
             </div>
-            
         </div>
     </div>
-    
 
-    <script src="js/main.js"></script>
+    <script src="js/new_set.js"></script>
 </body>
 </html>
