@@ -55,7 +55,7 @@ nav {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
-    max-width: 600px;
+    
 }
 .homepage button {
     font-size: 24px;
@@ -279,4 +279,88 @@ my sets
 
 .new_set .questions-input button.addQuestion:hover {
     background-color: #3F49B7;
+}
+
+button.reveal-answer {
+    background-color: #4F76F5;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.reveal-answer:hover {
+    background-color: #3F49B7;
+}
+
+button.correct {
+    background-color: #4CAF50;
+    color: white;
+    width: auto;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.correct:hover {
+    background-color: #45A049;
+}
+
+button.incorrect {
+    background-color: #F44336;
+    color: white;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.incorrect:hover {
+    background-color: #E53935;
+}
+
+.congrats-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.congrats-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.question-container {
+    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.exit {
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #F54F4F;
+    width: 200px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }

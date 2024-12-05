@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (e.target.classList.contains('play-btn')) {
             let index = e.target.getAttribute('data-index');
-            // Add functionality for play button here
+            localStorage.setItem('selectedSetIndex', index);
+            window.location.href = 'play_set.html';
         }
     });
 
